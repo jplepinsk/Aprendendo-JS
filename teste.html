@@ -1,0 +1,15 @@
+<script>
+    //LOJA PINK
+    let total_compra = parseFloat(prompt("Informe o total da compra:"))
+    let taxa = 0 // criando a variável taxa
+
+    if (total_compra >= 500) {
+        taxa = 0.9
+    } else {
+        taxa = 0.95
+    }
+    
+    let valor_pagar = total_compra * taxa
+    alert("O valor a pagar com desconto é R$ " + valor_pagar.toFixed(2))
+
+</script>
